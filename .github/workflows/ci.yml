@@ -1,0 +1,13 @@
+name: Student Application CI
+
+on:
+ push:
+  branches:[main]
+  runs-on: windows-latest
+   steps:
+    -name: Checkout repository
+     users: actions/checkout@v4
+      -name:Check student file
+       shell: cmd 
+
+       run: if exist student.txt (echo File exists) else (exit /b 1)
