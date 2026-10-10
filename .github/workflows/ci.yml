@@ -27,5 +27,5 @@ jobs:
      run: python -m compileall .
 
    - name: Run automated tests
-     run: python -m pytest --suppress-no-test-exit-code
+     run: python -m pytest
 
